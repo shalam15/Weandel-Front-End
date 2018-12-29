@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'dev-weandel';
+
+  pageOpen: boolean = false
+
+  toggleView = () => {
+    this.pageOpen = !this.pageOpen
+  }
 }

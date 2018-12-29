@@ -1,6 +1,17 @@
 <section>
   <div class="inner-section">
-    <app-header></app-header>
-    <router-outlet></router-outlet>
+    <div class="wrap open">
+        <app-header></app-header>
+        <router-outlet></router-outlet>
+        <a href="#" 
+          class="close" 
+          [class.active]="pageOpen" 
+          (click)="toggleView()">
+          <span class="x-span">
+              <span class="line active"></span>
+              <span class="line-two active"></span>
+            </span>
+        </a>
+    </div>
   </div>
 </section>
