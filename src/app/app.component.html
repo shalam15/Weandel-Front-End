@@ -1,15 +1,15 @@
 <section>
   <div class="inner-section">
-    <div class="wrap open">
+    <div class="wrap" [class.open]="appService.menuOpen">
         <app-header></app-header>
         <router-outlet></router-outlet>
         <a href="#" 
           class="close" 
-          [class.active]="pageOpen" 
+          [class.active]="appService.menuOpen"
           (click)="toggleView()">
           <span class="x-span">
-              <span class="line active"></span>
-              <span class="line-two active"></span>
+              <span [class.active]="appService.menuOpen" class="line"></span>
+              <span [class.active]="appService.menuOpen" class="line-two"></span>
             </span>
         </a>
     </div>

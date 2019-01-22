@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppService } from "./services/app.service";
 
 @Component({
   selector: 'app-root',
@@ -8,9 +9,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'dev-weandel';
 
-  pageOpen: boolean = false
+  constructor(public appService: AppService) {}
 
   toggleView = () => {
-    this.pageOpen = !this.pageOpen
+    this.appService.toggleMenu()
   }
 }
