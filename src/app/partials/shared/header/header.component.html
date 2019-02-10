@@ -1,24 +1,28 @@
 <div class="head">
-  <div class="head-inner">
-    <div class="logo">
-      WEANDEL
-    </div>
-    <nav>
-      <a href="#" class="links" [class.active]="getRoute()">
-        Home
-      </a>
-      <a href="#" class="links">
-        Services
-      </a>
-      <a href="#" class="links">
-        Work
-      </a>
-      <a href="#" class="links">
-        Contact
-      </a>
-    </nav>
-    <div class="menu" (click)="toggleMenu()">
-      <i class="fas fa-bars"></i>
+  <div class="head-fixed">
+    <div class="head-fixed-inner">
+      <div class="head-inner">
+        <div class="logo">
+          WEANDEL
+        </div>
+        <nav>
+          <a href="#" class="links" [class.active]="getRoute()">
+            Home
+          </a>
+          <a href="#" class="links">
+            Services
+          </a>
+          <a href="#" class="links">
+            Work
+          </a>
+          <a href="#" class="links">
+            Contact
+          </a>
+        </nav>
+        <div class="menu" (click)="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
     </div>
   </div>
 </div>

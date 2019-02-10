@@ -11,8 +11,7 @@ export class HeaderComponent implements OnInit {
 
   constructor(public appService: AppService, private route: Router) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   getRoute = () => {
     if (this.route.url === '/')

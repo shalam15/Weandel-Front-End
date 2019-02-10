@@ -1,0 +1,27 @@
+.main-section::after {
+  background: linear-gradient(135deg,rgba(52,82,255,0.94) 0%,rgba(46,211,151,0.71) 100%);
+  opacity: 0.95;
+  width: 100%;
+  height: 100%;
+
+}
+.bg-image {
+  background-image: url('../../../assets/study.jpg');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  background-color: rgb(52, 82, 255);
+  position: relative;
+  height: 818px;
+}
+.svg-wrap {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  /* height: 350px; */
+  z-index: 2;
+  transform: translateZ(0);
+}

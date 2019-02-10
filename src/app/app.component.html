@@ -1,8 +1,10 @@
 <section>
-  <div class="inner-section">
+  <div class="inner-section" >
     <div class="wrap" [class.open]="appService.menuOpen">
-        <app-header></app-header>
-        <router-outlet></router-outlet>
+        <div class="overflow-class">
+          <app-header></app-header>
+          <router-outlet></router-outlet>
+        </div>
         <a href="#" 
           class="close" 
           [class.active]="appService.menuOpen"
