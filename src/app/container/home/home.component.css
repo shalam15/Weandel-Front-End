@@ -1,27 +1,93 @@
-.main-section::after {
+.main-section {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  min-height: 124px;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+}
+.top-sec-wrap {
+  padding-top: 680px;
+  position: relative;
+  transition: 0.3s;
+  visibility: visible;
+  height: 100%;
+  width: 100%;
+}
+.bg-wrap-outer {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  transition: 0.3s;
+}
+.bg-wrap-outer::after {
   background: linear-gradient(135deg,rgba(52,82,255,0.94) 0%,rgba(46,211,151,0.71) 100%);
   opacity: 0.95;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-
+  content: ' ';
+  z-index: 2;
+  transition: 0.3s;
 }
-.bg-image {
+.bg-wrap-inner {
+  transition: transform 0.95s 0s cubic-bezier(0.3,0.58,0.42,0.9);
+  transform: scale(1) translateZ(0);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.bg-div {
   background-image: url('../../../assets/study.jpg');
-  background-repeat: no-repeat;
   background-position: left top;
-  background-size: cover;
+  background-repeat: no-repeat;
   background-color: rgb(52, 82, 255);
-  position: relative;
-  height: 818px;
+  transform: translate3d(0px, 40px, 0px) scale(1.005, 1.005);
+  height: 827px;
+  background-attachment: scroll;
+  top: auto;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  background-size: cover;
+  width: 100%;
 }
-.svg-wrap {
+.shape-wrap {
+  height: 350px;
   position: absolute;
   top: auto;
   bottom: 0;
   left: 0;
   right: 0;
   width: 100%;
-  /* height: 350px; */
   z-index: 2;
   transform: translateZ(0);
+}
+
+.nectar-shape {
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  position: absolute;
+  fill: #fff;
+}
+.nectar-shape path:nth-child(1) {
+  opacity: 0.15;
+}
+.nectar-shape path:nth-child(2) {
+  opacity: 0.3;
 }
