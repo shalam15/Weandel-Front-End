@@ -22,6 +22,7 @@
   position: absolute;
   left: 0;
   top: 0;
+  right: 0;
   z-index: 1;
   transition: 0.3s;
 }
@@ -32,6 +33,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   content: ' ';
@@ -48,10 +50,11 @@
   z-index: 1;
   top: 0;
   left: 0;
+  right: 0;
 }
 .bg-div {
   background-image: url('../../../assets/study.jpg');
-  background-position: left top;
+  /* background-position: left top; */
   background-repeat: no-repeat;
   background-color: rgb(52, 82, 255);
   transform: translate3d(0px, 40px, 0px) scale(1.005, 1.005);
@@ -62,6 +65,7 @@
   position: absolute;
   z-index: 1;
   left: 0;
+  right: 0;
   background-size: cover;
   width: 100%;
 }
@@ -90,4 +94,52 @@
 }
 .nectar-shape path:nth-child(2) {
   opacity: 0.3;
+}
+.motto-wrap {
+  margin-top: -50px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: block;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  padding-left: 90px;
+  transition: 0.3s;
+}
+.motto-text {
+  font-size: 40px;
+  color: #fff;
+  width: 45%;
+  line-height: 50px;
+  transition: 0.3s;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 80px;
+}
+.main-discover {
+  position: relative;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgba(255,255,255,0.75);
+  background-color: transparent;
+  border-radius: 4px;
+  transition: all .45s cubic-bezier(0.25,1,0.33,1);
+  font-size: 18px;
+  font-weight: lighter;
+  color: #fff;
+  padding: 20px 50px;
+  cursor: pointer;
+}
+.main-discover:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 20px 38px rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+  color: #000;
+}
+.main-discover span {
+  transition: opacity .45s cubic-bezier(0.25,1,0.33,1),transform .45s cubic-bezier(0.25,1,0.33,1);
+  transform: translateX(0);
+  letter-spacing: 1px;
 }
