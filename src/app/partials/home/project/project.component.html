@@ -10,7 +10,15 @@
     <div class="description">
       <p>{{description}}</p>
     </div>
-    <a href="#" class="main-discover">
+    <a href="#" 
+      class="main-discover"
+      (mouseover)="hover=true"
+      (mouseleave)="hover=false"
+      [ngStyle]="{
+        'color': hover ? '#fff' : color, 
+        'border-color': border, 
+        'background-color': hover ? color : 'transparent'
+      }">
       <span>Visit Site</span>
     </a>
   </div>

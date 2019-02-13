@@ -3,7 +3,7 @@
   width: 100%;
   background-color: #fff;
   position: relative;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+  /* box-shadow: 0 10px 20px rgba(0,0,0,0.12); */
   z-index: 100;
 }
 .head-fixed {
@@ -12,7 +12,7 @@
   width: inherit;
   z-index: 100;
   background-color: #fff;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+  /* box-shadow: 0 10px 20px rgba(0,0,0,0.12); */
 }
 .head-fixed-inner {
   z-index: 100;

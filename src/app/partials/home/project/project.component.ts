@@ -12,6 +12,9 @@ export class ProjectComponent implements OnInit {
   @Input() description: string
   @Input() image: string
   @Input() color: string  
+  @Input() border: string
+
+  hover: boolean = false
 
   constructor() { }
 

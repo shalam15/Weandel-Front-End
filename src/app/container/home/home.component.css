@@ -149,3 +149,105 @@
 .project-wrap {
   padding: 90px 30px;
 }
+.quote {
+  padding: 90px;
+  padding-top: 0px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+.quote p:first-child {
+  color: #3452ff;
+  font-size: 110px;
+  font-weight: bolder;
+  margin-bottom: -50px;
+}
+.quote p:nth-child(2) {
+  letter-spacing: 0;
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 700;
+}
+.quote p:nth-child(3) {
+  color: #333;
+  margin-top: 40px;
+}
+.services {
+  padding: 90px;
+  background-color: #fff;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.services-left {
+  width: 40%;
+}
+.services-left p {
+  font-size: 33px;
+  line-height: 40.6px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  display: block;
+}
+/* .services-left a {
+  position: relative;
+  display: inline-block;
+  color: #0f8fff;
+  border: 2px solid #0f8fff;
+  background-color: transparent;
+  border-radius: 4px;
+  transition: all .45s cubic-bezier(0.25,1,0.33,1);
+  font-size: 14px;
+  font-weight: lighter;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.services-left a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 38px rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+  color: #000;
+} */
+.gradient-border {
+  background: linear-gradient(125deg,#0de2b8,#0f8fff);
+  border-radius: 4px;
+  transition: all .45s cubic-bezier(0.25,1,0.33,1);
+  cursor: pointer;
+  padding: 2px;
+  width: 180px;
+  height: 45px;
+}
+.gradient-border:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 38px rgba(0, 0, 0, 0.16);
+}
+.gradient-border:hover a {
+  background: transparent;
+  color: #fff;
+}
+.gradient-border a {
+  background: #fff;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2px;
+  color: #333;
+  padding: 0px 15px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+/* .services-left a span {
+  transition: opacity .45s cubic-bezier(0.25,1,0.33,1),transform .45s cubic-bezier(0.25,1,0.33,1);
+  transform: translateX(0);
+  letter-spacing: 1px;
+  margin-right: 20px;
+} */
