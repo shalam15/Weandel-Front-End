@@ -7,13 +7,21 @@ import { HomeComponent } from './container/home/home.component';
 import { HeaderComponent } from './partials/shared/header/header.component';
 import { AppService } from "./services/app.service";
 import { ProjectComponent } from './partials/home/project/project.component';
+import { ServiceComponent } from './partials/home/service/service.component';
+import { FooterCardComponent } from './partials/home/footer-card/footer-card.component';
+import { FooterComponent } from './partials/shared/footer/footer.component';
+import { SocialComponent } from './partials/shared/social/social.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    ProjectComponent
+    ProjectComponent,
+    ServiceComponent,
+    FooterCardComponent,
+    FooterComponent,
+    SocialComponent
   ],
   imports: [
     BrowserModule,
