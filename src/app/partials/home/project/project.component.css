@@ -1,6 +1,7 @@
 .wrap {
   width: 100%;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   transition: 0.3s;
@@ -22,7 +23,6 @@
   letter-spacing: 1px;
   font-size: 12px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  /* font-weight: lighter; */
   margin-bottom: 10px;
   transition: 0.3s;
 }
@@ -72,4 +72,30 @@
   letter-spacing: 1px;
   font-size: 14px;
   font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .wrap {
+    flex-direction: column;
+  }
+  .cover {
+    width: 100%;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+  }
+  .detail {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cover {
+    display: flex;
+    justify-content: center;
+  }
+  .cover img {
+    width: 282px;
+    height: 203px;
+  }
 }

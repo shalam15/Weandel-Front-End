@@ -1,5 +1,5 @@
 .footer {
-  height: 50%;
+  height: 300px;
   background-color: #f3f3f3;
   border-top-left-radius: 18%;
   border-top-right-radius: 18%;
@@ -25,4 +25,12 @@
 }
 .each-socials {
   margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    height: 500px;
+    border-top-left-radius: 12%;
+    border-top-right-radius: 12%;
+  } 
 }
