@@ -25,7 +25,7 @@
           <p class="motto-text">
             From education to employment, Everything in-between is what we do
           </p>
-          <a class="main-discover">
+          <a class="main-discover" (click)="toProjects(projects)">
             <span>Discover More</span>
           </a>
         </div>
@@ -33,7 +33,7 @@
     </div>
   </div>
 </section>
-<section class="projects">
+<section class="projects" #projects>
   <div class="projects-inner">
     <div class="project-wrap">
       <app-project color="rgb(52, 82, 255)" border="rgba(52, 82, 255, 0.75)" name="University App"
@@ -62,7 +62,7 @@
     <p>AJ ABDUL</p>
   </div>
 </section>
-<section class="services">
+<section class="services" #services id="services">
   <div class="services-inner">
     <div class="services-left">
       <p>We Offer Awesome Services.</p>

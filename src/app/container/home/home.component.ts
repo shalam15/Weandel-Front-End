@@ -10,6 +10,10 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
+  toProjects = (target: HTMLElement) => {
+    target.scrollIntoView({behavior: "smooth"})
+  }
+
   ngOnInit() {}
 
 }
