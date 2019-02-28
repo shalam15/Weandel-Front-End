@@ -1,10 +1,11 @@
-
-<div class="head">
-  <div class="head-fixed">
-    <div class="head-fixed-inner">
+<div class="head" [ngClass]="{'small-header': small == 'true'}">
+  <div class="head-fixed" [ngClass]="{'small-header': small == 'true'}">
+    <div class="head-fixed-inner" [ngClass]="{'small-header': small == 'true'}">
       <div class="head-inner">
         <div class="logo">
-          <a href="#"><img style="height: 55px;" src="../../../../assets/logo-020823.png" alt=""></a>
+          <a href="#">
+            <img style="height: 55px;" src="../../../../assets/logo-020823.png" alt="">
+          </a>
         </div>
         <nav>
           <a href="#" class="links" [class.active]="getRoute()">

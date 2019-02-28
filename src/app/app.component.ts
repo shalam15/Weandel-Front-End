@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { AppService } from "./services/app.service";
 
 @Component({
@@ -8,6 +8,13 @@ import { AppService } from "./services/app.service";
 })
 export class AppComponent {
   title = 'dev-weandel';
+  smallHeader: boolean = false
+
+  @HostListener('scroll', ['$event'])
+
+  scroll = (e) => {
+    this.smallHeader = e.srcElement.scrollTop > 100
+  }
 
   constructor(public appService: AppService) {}
 

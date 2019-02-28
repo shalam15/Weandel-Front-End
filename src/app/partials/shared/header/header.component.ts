@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { AppService } from "../../../services/app.service";
 import { Router } from '@angular/router'
  
@@ -9,9 +9,13 @@ import { Router } from '@angular/router'
 })
 export class HeaderComponent implements OnInit {
 
+  @Input() small: boolean
+  
   constructor(public appService: AppService, private route: Router) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log(this.small)
+  }
 
   getRoute = () => {
     if (this.route.url === '/')
