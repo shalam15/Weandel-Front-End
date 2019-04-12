@@ -124,3 +124,11 @@ nav {
     height: 40px;
   }
 }
+
+
+/* Wide Screen Media */
+@media screen and (min-width: 1400px) {
+  .head-fixed {
+    width: 1370px;
+  }
+}

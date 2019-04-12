@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-about',
@@ -65,9 +65,12 @@ export class AboutComponent implements OnInit {
     },
   ]
 
+  @ViewChild('top') top
+
   constructor() { }
 
   ngOnInit() {
+    document.getElementById('upp').scrollIntoView({behavior: 'smooth'})
   }
 
 }

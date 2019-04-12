@@ -3,7 +3,7 @@ import * as actionTypes from './types'
 import { NgRedux } from "@angular-redux/store";
 import { IAppState } from "./index";
 import { HttpClient } from "@angular/common/http";
-import { async } from 'q';
+
 
 @Injectable()
 export class ContactActions {
@@ -11,6 +11,7 @@ export class ContactActions {
   constructor(private ngRedux: NgRedux<IAppState>, private http: HttpClient) {}
 
   postMessage = (data, callback) => {
+
     return this.http.post('', data).subscribe(async res => {
       await this.ngRedux.dispatch({
         payload: data,

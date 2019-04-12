@@ -55,7 +55,7 @@
 }
 .bg-div {
   background-image: url('../../../assets/study.jpg');
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-color: rgb(52, 82, 255);
   transform: translate3d(0px, 40px, 0px) scale(1.005, 1.005);
   height: 827px;
@@ -166,7 +166,7 @@
   max-width: 1400px;
 }
 .project-wrap {
-  padding: 90px 0px;
+  padding: 80px 0px;
   box-sizing: border-box;
 }
 .quote {
@@ -363,5 +363,11 @@
   }
   .footer-card {
     padding: 0px 30px;
+  }
+  .services-left {
+    margin-bottom: 20px;
+  }
+  .each-service {
+    margin-bottom: 10px;
   }
 }

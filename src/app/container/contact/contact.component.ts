@@ -35,7 +35,9 @@ export class ContactComponent implements OnInit, OnDestroy {
     this.action = new ContactActions(ngRedux, http)
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    document.getElementById('upp').scrollIntoView({behavior: 'smooth'})
+  }
 
   submit = async () => {
     this.action.postMessage(this.form.value, () => {

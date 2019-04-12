@@ -18,6 +18,7 @@ export class AppComponent {
   }
 
   constructor(public appService: AppService) {}
+  
 
   toggleView = () => {
     this.appService.toggleMenu()
@@ -26,4 +27,5 @@ export class AppComponent {
   toServices = (target: HTMLElement) => {
     target.scrollIntoView({behavior: "smooth"})
   }
+
 }
