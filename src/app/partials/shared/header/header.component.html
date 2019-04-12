@@ -3,21 +3,21 @@
     <div class="head-fixed-inner" [ngClass]="{'small-header': small == 'true'}">
       <div class="head-inner">
         <div class="logo">
-          <a href="#">
-            <img style="height: 55px;" src="../../../../assets/logo-020823.png" alt="">
+          <a href="" routerLink="">
+            <img style="height: 35px;" src="../../../../assets/logo-020823.png" alt="">
           </a>
         </div>
         <nav>
-          <a href="#" class="links" [class.active]="getRoute()">
+          <a href="" routerLink="" class="links" [class.active]="this.route.url == '/'">
             Home
           </a>
-          <a href="#" class="links" (click)="toService()">
+          <a href="#services" class="links" (click)="toService()">
             Services
           </a>
-          <a href="#" class="links">
+          <a href="#" class="links" routerLink="about" [class.active]="this.route.url == '/about'">
             About Us
           </a>
-          <a href="#" class="links">
+          <a href="#" class="links" routerLink="contact" [class.active]="this.route.url == '/contact'">
             Contact
           </a>
         </nav>

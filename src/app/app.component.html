@@ -6,12 +6,28 @@
         <router-outlet></router-outlet>
         <app-footer></app-footer>
       </div>
-      <a href="#" class="close" [class.active]="appService.menuOpen" (click)="toggleView()">
+      <a class="close" [class.active]="appService.menuOpen" (click)="toggleView()">
         <span class="x-span">
           <span [class.active]="appService.menuOpen" class="line"></span>
           <span [class.active]="appService.menuOpen" class="line-two"></span>
         </span>
       </a>
+    </div>
+    <div class="nav-section" *ngIf="appService.menuOpen">
+      <ul class="nav-links">
+        <li>
+          <a href="#" routerLink="" (click)="toggleView()">Home</a>
+        </li>
+        <li>
+          <a href="#services" >Services</a>
+        </li>
+        <li>
+          <a href="#" routerLink="about" (click)="toggleView()">About Us</a>
+        </li>
+        <li>
+          <a href="#" routerLink="contact" (click)="toggleView()">Contact Us</a>
+        </li>
+      </ul>
     </div>
   </div>
 </section>

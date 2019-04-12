@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { AppService } from "./services/app.service";
 
 @Component({
@@ -6,6 +6,7 @@ import { AppService } from "./services/app.service";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   title = 'dev-weandel';
   smallHeader: boolean = false
@@ -17,7 +18,6 @@ export class AppComponent {
   }
 
   constructor(public appService: AppService) {}
-
 
   toggleView = () => {
     this.appService.toggleMenu()

@@ -27,7 +27,8 @@
   transition: 0.3s;
 }
 .bg-wrap-outer::after {
-  background: linear-gradient(135deg,rgba(52,82,255,0.94) 0%,rgba(46,211,151,0.71) 100%);
+  /* background: linear-gradient(135deg,rgba(52,82,255,0.94) 0%,rgba(46,211,151,0.71) 100%); */
+  background: linear-gradient(135deg,rgba(46, 211, 151,0.94) 0%,rgba(255, 16, 83,0.71) 100%);
   opacity: 0.95;
   display: block;
   position: absolute;
@@ -65,8 +66,9 @@
   z-index: 1;
   left: 0;
   right: 0;
-  background-size: cover;
+  background-size: contain;
   width: 100%;
+  background-position: center;
 }
 .shape-wrap {
   height: 350px;
@@ -139,6 +141,7 @@
   color: #fff;
   padding: 20px 50px;
   cursor: pointer;
+  text-decoration: none;
 }
 .main-discover:hover {
   transform: translateY(-7px);
@@ -281,16 +284,17 @@
 .card-inner {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   max-width: 1500px;
 }
 .footer-card .each-card {
-  width: 49%;
+  width: 100%;
+  
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .motto-text {
     width: 100%;
   }

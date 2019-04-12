@@ -23,10 +23,10 @@
       <div class="motto-inner">
         <div class="slideInUp animated">
           <p class="motto-text">
-            From education to employment, Everything in-between is what we do
+            Our Goal is to make your <span><b>Business</b></span> run efficiently with the help of technology
           </p>
-          <a class="main-discover" (click)="toProjects(projects)">
-            <span>Discover More</span>
+          <a routerLink="contact" class="main-discover" (click)="toProjects(projects)">
+            <span>Contact Us Now</span>
           </a>
         </div>
       </div>
@@ -36,21 +36,21 @@
 <section class="projects" #projects>
   <div class="projects-inner">
     <div class="project-wrap">
-      <app-project color="rgb(52, 82, 255)" border="rgba(52, 82, 255, 0.75)" name="University App"
-        link="WWW.UNIVERSITY.SOCIAL" image="../../../assets/University-min.jpg"
-        description="Social University is multi-purpose digital platform for University students to connect, network, learn and grow their professional and academic careers on. Students can scroll through university news, get alerts, submit assignments- it provides all the features of a premium Learning Management System. Social University is easily accessible on the web and as a mobile application, so whether you live in the rural areas or in the city, your dream career is just one click away.">
+      <app-project color="rgb(52, 82, 255)" border="rgba(52, 82, 255, 0.75)" name="Security Management Software"
+        link="WWW.WEANDEL.COM/SMS" image="../../../assets/University-min.jpg"
+        description="Security Management Software is a software that is a solution to paper based sign-in and Employee Login, with an addition of multiple functionalities to ease the work of Security Officers. It is meant to mainly reduce the use of inefficient paper logging and  make information retrieval fast and Accurate. When completed, it would be available on IOS, Android and Desktop to cater for companies that do not have computers, In which their  employees can use their phones to log information.">
       </app-project>
     </div>
     <div class="project-wrap">
-      <app-project color="rgb(46, 211, 151)" border="rgba(46, 211, 151, 0.75)" name="Employshop App"
-        link="WWW.EMPLOYSHOP.COM" image="../../../assets/Employ-min.jpg"
-        description="Time is money and who knows that better than the head of the Human Resources department! Register with EmployShop and allow our experienced recruiters match your company’s job listing with bright, skilled university graduates from the country’s highest-ranking colleges and universities. Every university graduate is ranked according to their demonstrated potential for on-the-job performance. Join hands with EmployShop and hire the best university talent today!">
+      <app-project color="rgb(46, 211, 151)" border="rgba(46, 211, 151, 0.75)" name="CodeCentre"
+        link="WWW.CODECENTRE.COM" image="../../../assets/Employ-min.jpg"
+        description="Codecentre is an online web application targeted at those who are just learning how to code. It is proven that when a person learns one language, it is easier for them to learn another language. We want to change how this is done. Most of the time some programming languages syntax are really similar so when a coder can do something in one programming language it will be better for them to see it done in multiple other languages for them to grasp the syntax of the other languages easily. It will also include rewards and problem/solution">
       </app-project>
     </div>
     <div class="project-wrap">
-      <app-project color="rgb(255, 16, 83)" border="rgba(255, 16, 83, 0.75)" name="Citymilana App"
-        link="WWW.CITYMILANA.COM" image="../../../assets/City-min.jpg"
-        description="If your local business is not showing up prominently online, your potential customers are probably spending money at a competitor’s store or office. Smart entrepreneurs put their trust in the CityMilana App by Codigo World. CityMilana is a local business listing and online marketing platform that is accessible both online as well as on its very own mobile application. Clients and customers receive regular sales, maintenance, and other relevant alerts directly from their favorite businesses. All businesses can sign up for a free listing on the CityMilana digital business directory.">
+      <app-project color="rgb(255, 16, 83)" border="rgba(255, 16, 83, 0.75)" name="Music Data" link="WWW.MUSICDATA.COM"
+        image="../../../assets/City-min.jpg"
+        description="You might have Apple Music or Spotify, or maybe you downloaded your music online from some random website, we wont judge whichever one you have you love music and love various Artists. But is there a way to get more details to a song? Apart form googling the song or Artist. Some music app doesn’t even provide you the lyrics to the song you are listening to. Our Music App combines the functionality of Music Listening and data science to beautiful visualize the details of millions of song and to get more into any of your favorite Artist, or songs way of thinking even remix their song the way to would have remixed it themselves.">
       </app-project>
     </div>
   </div>
@@ -58,7 +58,7 @@
 <section class="quote">
   <div class="quote-inner">
     <p>”</p>
-    <p>Live as if you were to die tomorrow. Learn as if you were to live forever.</p>
+    <p>I do not fear computers, I fear lack of them || Don’t document the problem, fix it.</p>
     <p>AJ ABDUL</p>
   </div>
 </section>
@@ -67,7 +67,7 @@
     <div class="services-left">
       <p>We Offer Awesome Services.</p>
       <div class="gradient-border">
-        <a href="#">
+        <a href="#" routerLink="about">
           <span>More About Us</span>
           <i class="fas fa-long-arrow-alt-right"></i>
         </a>
@@ -75,32 +75,32 @@
     </div>
     <div class="services-right">
       <div class="each-service">
-        <app-service icon="fas fa-university" title="College Branding"
-          description="We help the college to promote their new, events and activities to their followers. This way the college will be updated with the new technology and resource that is been updated rapidly.">
+        <app-service icon="fas fa-atlas" title="Web Development"
+          description="From App Landing pages to a fully functional E-Commerce Website, we can get your website running in Minutes. Do you already have a website you want to update? we can help maintain it to your satisfaction.">
         </app-service>
       </div>
       <div class="each-service">
-        <app-service icon="fas fa-film" title="Filter Skill Contents"
-          description="We filter post content that is been shared in our platform to improve students the skill that will help him to build better resume which will eventually help him improve his skill and the companies will able to find.">
+        <app-service icon="fas fa-app-store-ios" title="IOS/Android Development"
+          description="Do you have an idea you have been thinking about? We can make that app for you and make your idea come to life. With your help we can make the app into the next Facebook or even the Next {your company name}.">
         </app-service>
       </div>
       <div class="each-service">
-        <app-service icon="fas fa-user-tie" title="Portfolio Management"
-          description="Students can publish their class and personal projects in the community. In here students will get a better exposure to build a portfolio & improve and connect with the project.">
+        <app-service icon="fas fa-user-tie" title="Consulting"
+          description="Our consulting services helps uncover insights and trapped value within your organization, also guiding and accelerating you through your digital transformation journey.">
         </app-service>
       </div>
       <div class="each-service">
-        <app-service icon="fas fa-trophy" title="Talent Sourcing"
-          description="When a student shows talent other than his department, a new skill will be added. These skills will be added and compared with all other students in the platform. Top talent will have top market exposure.">
+        <app-service icon="fas fa-calculator" title="Digital Business"
+          description="Reimagine your business models by automating and streamlining your process to reduce cost, modernizing your products also optimizing customer experiences.">
         </app-service>
       </div>
       <div class="each-service">
-        <app-service icon="fas fa-compact-disc" title="Corporate Training"
-          description="Companies can upload their training and materials that are required to qualify the student to get a job in their company. The companies can create a package for to student to shortlist them.">
+        <app-service icon="fas fa-server" title="Technology Support"
+          description="This service provides proactive and reactive support any point it is needed. We supports your application from the development phase till the deployment, management and maintenance phase.">
         </app-service>
       </div>
       <div class="each-service">
-        <app-service icon="fas fa-users" title="Corporate Recruitment"
+        <app-service icon="fas fa-laptop-code" title="Outsourcing"
           description="With all the data and information on students skills that are been generated in the resume. Companies can find the right candidates that are best suited for that position.">
         </app-service>
       </div>
@@ -110,12 +110,12 @@
 <section class="footer">
   <div class="footer-card">
     <div class="card-inner">
-      <div class="each-card">
-        <app-footer-card color="#ff1053" title="Don't forget we blog too!" link="Read Our Posts">
+      <!-- <div class="each-card">
+        <app-footer-card color="#ff1053" title="Don't forget we blog too!" link="Read Our Posts" url="about">
         </app-footer-card>
-      </div>
+      </div> -->
       <div class="each-card">
-        <app-footer-card color="#3452ff" title="Ready to have a conversation?" link="Contact Us">
+        <app-footer-card color="#3452ff" title="Ready to have a conversation?" link="Contact Us" url="contact">
         </app-footer-card>
       </div>
     </div>

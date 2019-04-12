@@ -11,16 +11,9 @@ export class HeaderComponent implements OnInit {
 
   @Input() small: boolean
 
-  constructor(public appService: AppService, private route: Router) { }
+  constructor(public appService: AppService, public route: Router) { }
 
   ngOnInit() { }
-
-  getRoute = () => {
-    if (this.route.url === '/')
-      return 'active'
-    else
-      return 'inactive'
-  }
 
   toggleMenu = () => {
     this.appService.toggleMenu()
