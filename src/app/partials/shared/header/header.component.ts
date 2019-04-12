@@ -9,7 +9,7 @@ import { Router } from '@angular/router'
 })
 export class HeaderComponent implements OnInit {
 
-  @Input() small: boolean
+  @Input() small: string
 
   constructor(public appService: AppService, public route: Router) { }
 
