@@ -57,7 +57,7 @@ section {
 .mission {
   height: 400px;
   background: linear-gradient( rgba(0,0,0,0.7), rgba(0,0,0, 0.7)), 
-  url(../../../assets/about.jpeg) 50% 0 repeat fixed;
+  url(../../../assets/about-two.jpg) 50% 0 repeat fixed;
   padding: 0px 90px;
 }
 .mission-inner {
@@ -107,7 +107,7 @@ section {
   border-radius: 10px;
   box-shadow: 0 60px 135px rgba(0,0,0,0.14), 0 15px 65px rgba(0,0,0,0.14);
   height: 353px;
-  background-image: url('../../../assets/vision.jpg');
+  background-image: url('../../../assets/vision-two.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   align-items: center;
@@ -116,6 +116,13 @@ section {
 }
 .background p {
   color: #fff;
+  font-size: 22px;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  font-weight: 800;
+  letter-spacing: 1px;
+
 }
 .right-vision h3 {
   color: #333;

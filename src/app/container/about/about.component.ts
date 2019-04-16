@@ -9,41 +9,43 @@ export class AboutComponent implements OnInit {
 
   data = [
     {
-      title: 'FOR STUDENTS',
+      title: 'FOR BUSINESS',
       detail: [
-        'Resume Generation',
-        'Portfolio Management',
-        'College Networking',
-        'Company networking'
+        'Technology Support',
+        'Business Strategy',
+        'Search Engine Optimization',
+        'Social Media Marketing',
+        'Business Consulting',
       ]
     },
     {
-      title: 'FOR COLLEGE',
+      title: 'FOR ENTREPRENEURS',
       detail: [
-        'Publish News and Events',
-        'Digital Library',
-        'College overall stats',
-        'Performance analysis'
+        'Idea Investment',
+        'Technology Support',
+        'Strategy',
+        'Consulting'
+      ]
+    },
+    {
+      title: 'FOR STUDENTS',
+      detail: [
+        'Internships',
+        'Tech Exposure',
+        'IT Consulting',
+        'Idea Suppport',
+        'Gathering & Seminars',
       ]
     },
     {
       title: 'FOR COMPANIES',
       detail: [
-        'HR Management',
-        'Seach projects, members',
-        'Post custom jobs',
-        'Genuine resume access'
+        'Company Management',
+        'Technology Support',
+        'Application Services',
+        'IT Consulting'
       ]
     },
-    {
-      title: 'FOR BUSINESS',
-      detail: [
-        'Staff Management',
-        'Product Portfolio',
-        'Customer Subscribers',
-        'Local listing'
-      ]
-    }
   ]
 
   visions = [
