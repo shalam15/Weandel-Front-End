@@ -78,7 +78,7 @@ nav {
   border-top: 2px solid #000;
   margin-top: 4px;
   content: '';
-  border-color: #3452ff!important;
+  border-color: #3452ff;
 }
 .links:hover::after {
   transform: scaleX(1);

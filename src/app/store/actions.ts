@@ -12,13 +12,16 @@ export class ContactActions {
 
   postMessage = (data, callback) => {
 
-    return this.http.post('', data).subscribe(async res => {
+    return this.http.post('contact.php', data).subscribe(async res => {
+      console.log(res)
       await this.ngRedux.dispatch({
         payload: data,
         type: actionTypes.POST_MESSAGE
       })
       callback()
     }, async error => {
+      console.log(error)
+      console.log(error.response)
       await this.ngRedux.dispatch({
         payload: data,
         type: actionTypes.POST_MESSAGE
