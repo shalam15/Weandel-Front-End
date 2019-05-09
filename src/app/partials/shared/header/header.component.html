@@ -17,7 +17,7 @@
           <a href="" routerLink="" class="links" [class.active]="this.route.url == '/'">
             Home
           </a>
-          <a href="#services" class="links" (click)="toService()">
+          <a href="#services" class="links" (click)="toService()" [class.active]="this.route.url == '/#services'">
             Services
           </a>
           <a href="#" class="links" routerLink="about" [class.active]="this.route.url == '/about'">
