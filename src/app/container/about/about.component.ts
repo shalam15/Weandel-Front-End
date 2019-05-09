@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-about',
@@ -9,65 +9,70 @@ export class AboutComponent implements OnInit {
 
   data = [
     {
-      title: 'FOR STUDENTS',
+      title: 'FOR BUSINESS',
       detail: [
-        'Resume Generation',
-        'Portfolio Management',
-        'College Networking',
-        'Company networking'
+        'Technology Support',
+        'Business Strategy',
+        'Search Engine Optimization',
+        'Social Media Marketing',
+        'Business Consulting',
       ]
     },
     {
-      title: 'FOR COLLEGE',
+      title: 'FOR ENTREPRENEURS',
       detail: [
-        'Publish News and Events',
-        'Digital Library',
-        'College overall stats',
-        'Performance analysis'
+        'Idea Investment',
+        'Technology Support',
+        'Strategy',
+        'Consulting'
+      ]
+    },
+    {
+      title: 'FOR STUDENTS',
+      detail: [
+        'Internships',
+        'Tech Exposure',
+        'IT Consulting',
+        'Idea Suppport',
+        'Gathering & Seminars',
       ]
     },
     {
       title: 'FOR COMPANIES',
       detail: [
-        'HR Management',
-        'Seach projects, members',
-        'Post custom jobs',
-        'Genuine resume access'
+        'Company Management',
+        'Technology Support',
+        'Application Services',
+        'IT Consulting'
       ]
     },
-    {
-      title: 'FOR BUSINESS',
-      detail: [
-        'Staff Management',
-        'Product Portfolio',
-        'Customer Subscribers',
-        'Local listing'
-      ]
-    }
   ]
 
   visions = [
     {
-      title: 'Connect',
-      description: 'Connecting people with the similar interest in work, passion and interest.'
+      title: 'Empower',
+      description: 'Educating and empowering entrepreneurs & businesses into achieving their dreams.'
     },
     {
-      title: 'Source',
-      description: 'Help people to source the right candidate or resource to meet their needs.'
+      title: 'Innovate',
+      description: 'Introducing something new that solves world problems or meet clients need.'
     },
     {
-      title: 'Passion',
-      description: 'Help users to focus on their passion and help them to achieve the best.'
+      title: 'Execute',
+      description: 'Execution Excellence in all we do for clients and ourselves is our stand.'
     },
     {
-      title: 'Build',
-      description: 'Build a world where we solve world problem and the world will solve ours'
+      title: 'Results',
+      description: 'Providing excellent and accountable result then aspiring to be more tomorrow.'
     },
   ]
+
+  @ViewChild('top') top
 
   constructor() { }
 
   ngOnInit() {
+    document.getElementById('upp').scrollIntoView({behavior: 'smooth'})
   }
 
 }

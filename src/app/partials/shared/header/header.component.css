@@ -78,7 +78,7 @@ nav {
   border-top: 2px solid #000;
   margin-top: 4px;
   content: '';
-  border-color: #3452ff!important;
+  border-color: #3452ff;
 }
 .links:hover::after {
   transform: scaleX(1);
@@ -122,5 +122,13 @@ nav {
   }
   .head-fixed-inner {
     height: 40px;
+  }
+}
+
+
+/* Wide Screen Media */
+@media screen and (min-width: 1400px) {
+  .head-fixed {
+    width: 1370px;
   }
 }

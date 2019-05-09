@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from "@angular/forms";
+import { ReactiveFormsModule, FormsModule } from "@angular/forms";
 import { NgReduxModule, NgRedux } from '@angular-redux/store'
 import { HttpClientModule } from "@angular/common/http";
 import { rootReducer, IAppState } from "./store/index";
@@ -44,7 +44,8 @@ import { InputComponent } from './partials/contact/input/input.component';
     AppRoutingModule,
     ReactiveFormsModule,
     NgReduxModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [AppService],
   bootstrap: [AppComponent]

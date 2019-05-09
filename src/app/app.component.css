@@ -9,7 +9,6 @@ section {
   width: 100%;
   box-sizing: border-box;
   transition: all 0.3s;
-  overflow: hidden;
 }
 .wrap {
   transform-origin: right;
@@ -162,12 +161,11 @@ section {
     box-shadow: 0px 16px 44px rgba(0,0,0,0.3);
   }
 }
-@media screen and (max-width: 1600px) {
+/* @media screen and (min-width: 1400px) {
   section {
-    /* width: 1370px; */
-    margin: auto
+    width: 1370px;
   }
-}
+} */
 
 @media screen and (max-width: 1023px) {
   .nav-section {

@@ -9,15 +9,16 @@ import { AppService } from "./services/app.service";
 
 export class AppComponent {
   title = 'dev-weandel';
-  smallHeader: boolean = false
+  smallHeader: string = 'small'
 
   @HostListener('scroll', ['$event'])
 
   scroll = (e) => {
-    this.smallHeader = e.srcElement.scrollTop > 100
+    this.smallHeader = e.srcElement.scrollTop > 100 ? 'small' : 'large'
   }
 
   constructor(public appService: AppService) {}
+  
 
   toggleView = () => {
     this.appService.toggleMenu()
@@ -26,4 +27,5 @@ export class AppComponent {
   toServices = (target: HTMLElement) => {
     target.scrollIntoView({behavior: "smooth"})
   }
+
 }

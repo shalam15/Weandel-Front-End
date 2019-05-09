@@ -2,7 +2,7 @@
   <div class="inner-section">
     <div class="wrap" [class.open]="appService.menuOpen">
       <div class="overflow-class" (scroll)="scroll($event)">
-        <app-header small="{{smallHeader}}"></app-header>
+        <app-header small="{{smallHeader}}" id="upp"></app-header>
         <router-outlet></router-outlet>
         <app-footer></app-footer>
       </div>
